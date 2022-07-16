@@ -9,23 +9,16 @@
  *
  * @format
  */
-
-const pc = {
-	type: "Desktop",
-	spec: "core i7",
-	color: "black",
-	monitor: {
-		right: "hdmi",
-		left: "vag",
-	},
-	printer: true,
-	pcType: function (pcTypeChange) {
-		this.pcType = "laptop";
-	},
+const phone = {
+  type: "smartphone",
+  color: "black",
+  size: 5.2,
+  ram: 512,
+  coverColor: {
+    outside: "black",
+    inside: "brown",
+  },
 };
-
-console.log("pc number of montior: ", pc.monitor.right);
-
-console.log(" pc type before:", pc.type);
-
-console.log(" pc type after:", pc.pcType);
+console.log("The color of the phone is: ", phone.color);
+console.log(phone.color);
+console.log("The color of the inside cover is ", phone.coverColor.inside);
