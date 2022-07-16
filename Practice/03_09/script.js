@@ -19,8 +19,28 @@ const backpack = {
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
+
+  changeName: function (name) {
+    this.name = name;
+  },
+
+  changeVolume: function (volume) {
+    this.volume = volume;
+  },
+
+  changePocketNum: function (pocketNum) {
+    this.pocketNum = pocketNum;
+  },
+
   newStrapLength: function (lengthLeft, lengthRight) {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
 };
+backpack.changeName("big backpack");
+backpack.changeVolume(50);
+backpack.changePocketNum(30);
+
+console.log("change backpack name to ", backpack.name);
+console.log("change backpack volume to ", backpack.volume);
+console.log("change backpack pocket number to ", backpack.pocketNum);
